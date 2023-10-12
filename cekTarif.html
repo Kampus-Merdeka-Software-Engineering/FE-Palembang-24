@@ -141,13 +141,13 @@
                     <h1 class="text-primary">CEK ONGKIR</h1>
                   
                   </div>
-                  <form>
-                    <label for="name">
-                      <input id="name" name="name" type="text" placeholder="" autocomplete="off">
+                  <form id="formpostt">
+                    <label for="asal">
+                      <input id="asal" name="asal" type="text" placeholder="" autocomplete="off">
                       <span id="span-asal">Pilih Asal</span>
                     </label>
-                    <label for="name">
-                      <input id="name" name="tujuan" type="text" placeholder="" autocomplete="off">
+                    <label for="tujuan">
+                      <input id="tujuan" name="tujuan" type="text" placeholder="" autocomplete="off">
                       <span id="span-tujuan">Pilih Tujuan</span>
                     </label>
                     <label for="quantity">
@@ -163,10 +163,13 @@
                    
                     </div>
             
-                    <input type="submit" value="CEK ONGKIR">
+                    <input type="submit" name="submit" id="submit" value="CEK ONGKIR">
                    
                   </form>
                 
+                  <div name="hasil-query">
+
+                  </div>
                 </div>
               </div>
             </section>
@@ -269,6 +272,7 @@
 
     <!-- Template Javascript -->
     <script src="js/cekTarif.js"></script>
+    <script src="js/logicformm.js"></script>
 </body>
 
 </html>
