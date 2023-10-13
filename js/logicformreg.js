@@ -40,7 +40,7 @@ formRegister.addEventListener("submit", (event) =>{
         .then((res) => {
             console.log("test", res)
             alert("register berhasil");
-            window.location.href = "./index.html";
+            window.location.href = "./login.html";
         })
         .catch((error) => {
             alert(`Error Massage: ${error.massage}`);
