@@ -1,20 +1,16 @@
 const baseUrl = "https://be-palembang-24-production.up.railway.app/";
 
-let formRegister = document.getElementById("formpostr");
+let formRegister = document.getElementById("formpostl");
 
 //const display = document.querySelector("div[name='hasil-query2']")
 //display.innerHTML = ""
 
 formRegister.addEventListener("submit", (event) =>{
     event.preventDefault();
-    const nameValue = document.querySelector("#name").value;
-    const phoneValue = document.querySelector("#phone").value;
     const emailValue = document.querySelector("#email").value;
     const passwordValue = document.querySelector("#password").value;
     
     if (
-        !nameValue ||
-        !phoneValue ||
         !emailValue ||
         !passwordValue
         ) {
@@ -23,8 +19,6 @@ formRegister.addEventListener("submit", (event) =>{
         }
         
         const submittedData = {
-            name: nameValue,
-            phone: phoneValue,
             email: emailValue,
             password: passwordValue
         };
@@ -39,7 +33,7 @@ formRegister.addEventListener("submit", (event) =>{
         .then(response => response.json())
         .then((res) => {
             console.log("test", res)
-            alert("register berhasil");
+            alert("Login berhasil");
             window.location.href = "./index.html";
         })
         .catch((error) => {
